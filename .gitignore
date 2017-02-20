@@ -1,0 +1,15 @@
+#ignore files#
+.txt
+.json
+.rpyc
+.save
+.rpyb
+.bak
+.rpym
+.rpymc
+log.txt
+
+
+# ignore directory #
+saves/
+cache/
