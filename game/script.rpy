@@ -509,12 +509,18 @@ label start:
 
     ## These display lines of dialogue.
 
-    call front_credits
+
     
     jump start_prolog
 
 
-label front_credits:
+
+
+
+
+# splashscreen
+
+label splashscreen:
     scene white with fade
 
     show present:
@@ -569,6 +575,10 @@ label front_credits:
 
     hide engine
     hide mikudance
+
+    with dissolve
+
+    return
 
 
 init:
