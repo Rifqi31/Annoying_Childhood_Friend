@@ -3,7 +3,9 @@
 label chapter_5:
 
 
-    show langit2 with dissolve
+    scene bg langit with dissolve
+
+    show cinema with dissolve
 
     play music sesuatu fadeout 1.0 fadein 1.0
 
@@ -23,6 +25,8 @@ label chapter_5:
     n "Kota Jakarta."
 
     n "Mereka berdua tidak mengatakan pada kami tentang pilihan universitasnya."
+
+    hide cinema with dissolve
 
     hide langit with dissolve
 
@@ -310,10 +314,7 @@ label chapter_5:
 
     l "“Iya.... apa boleh aku tetap disini.”"
 
-    show iv_merem:
-        xalign 0.8 yalign 0.1
-    
-    with dissolve
+    show iv_merem at naik with dissolve
 
     l "“Aku ingin menunggunya bangun dan mengucapkan terima kasih.”"
 
@@ -330,30 +331,21 @@ label chapter_5:
     #show ivan_marah sakit at my_near2 with dissolve#sakit
 
     ##jeda yang ngga bisa diklik
-    $ renpy.pause(3.0, hard=True)
+    #$ renpy.pause(3.0, hard=True)
 
-    show iv_merem:
-        xalign 0.8 yalign 0.1
-
-    with dissolve
+    show iv_merem at naik with dissolve
 
     #jeda bebeapa detik
     $ renpy.pause(2.0, hard=True)
 
-    show iv_bangun:
-        xalign 0.8 yalign 0.1
-
-    with dissolve
+    show iv_bangun at naik with dissolve
 
     hide iv_merem
 
     #jeda lagi dikit
     $ renpy.pause(1.5, hard=True)
 
-    show iv_normal:
-        xalign 0.8 yalign 0.1
-    
-    with dissolve
+    show iv_normal at naik with dissolve
 
     hide iv_bangun 
 
@@ -377,8 +369,7 @@ label chapter_5:
 
     #show ivan_kesel sakit at my_near2
 
-    show iv_kesal:
-        xalign 0.8 yalign 0.1
+    show iv_kesal at naik
 
     i "“Memang harus seperti itu!!”"
 
@@ -397,10 +388,9 @@ label chapter_5:
     #hide ivan_kesel sakit at my_near
 
     #show ivan_sebel sakit at my_near
-    hide iv_kesal
+    hide iv_kesal at naik
 
-    show iv_normal:
-        xalign 0.8 yalign 0.1
+    show iv_normal
 
     i "“Tak apa.”"
 
@@ -420,8 +410,7 @@ label chapter_5:
     #show ivan_marah sakit at my_near
 
     hide iv_normal
-    show iv_marah:
-        xalign 0.8 yalign 0.1
+    show iv_marah at naik
 
     i "“Haah?!”"
 
@@ -445,10 +434,7 @@ label chapter_5:
 
     #show ivan_senyum sakit at my_near with dissolve
 
-    show iv_senang:
-        xalign 0.8 yalign 0.1
-
-    with dissolve
+    show iv_senang at naik with dissolve
 
     n "Ivan tersenyum melihatku."
 
@@ -488,8 +474,7 @@ label chapter_5:
     #show ivan_kesel sakit at my_near
 
     hide iv_senang
-    show iv_marah:
-        xalign 0.8 yalign 0.1
+    show iv_marah at naik
 
     i "“Berisiknya!!”"
 
@@ -516,8 +501,7 @@ label chapter_5:
 
     #show ivan_sebel sakit at my_near
 
-    show iv_normal:
-        xalign 0.8 yalign 0.1
+    show iv_normal at naik
 
     i "“Pergilah....”"
 
@@ -535,8 +519,7 @@ label chapter_5:
 
     hide iv_normal
 
-    show iv_marah:
-        xalign 0.8 yalign 0.1
+    show iv_marah at naik
 
     i "“Pergilah!”"
 
@@ -560,15 +543,11 @@ label chapter_5:
     
     #show ivan_senyum sakit at my_near with dissolve
 
-    show iv_normal:
-        xalign 0.8 yalign 0.1
-
-    with dissolve
+    show iv_normal at naik with dissolve
 
     n"Aku menghentikan langkahku, dan berbalik melihatnya."
 
-    show iv_picik:
-        xalign 0.8 yalign 0.1
+    show iv_picik at naik
 
     hide iv_normal
 
@@ -584,8 +563,7 @@ label chapter_5:
 
     #show ivan_kesel sakit at my_near
 
-    show iv_marah:
-        xalign 0.8 yalign 0.1
+    show iv_marah at naik
     
     hide iv_picik
 
@@ -603,19 +581,12 @@ label chapter_5:
 
     hide iv_marah
 
-    show iv_kesal:
-        xalign 0.8 yalign 0.1
+    show iv_kesal at naik
 
     i "“Jahatnya.....”"
     
 
-    
-    #hide ivan_kesel sakit at my_near
-
-    #show ivan_tablo sakit at my_near
-
-    show iv_normal:
-        xalign 0.8 yalign 0.1
+    show iv_normal at naik
 
     hide iv_kesal
 
@@ -629,8 +600,7 @@ label chapter_5:
 
     play music leaving_you fadeout 1.0 fadein 1.0
 
-    show iv_serius:
-        xalign 0.8 yalign 0.1
+    show iv_serius at naik
 
     hide iv_normal
 
@@ -649,22 +619,19 @@ label chapter_5:
 
     #show ivan_marah sakit at my_near
 
-    show iv_normal:
-        xalign 0.8 yalign 0.1
+    show iv_normal at naik
 
     hide iv_serius
 
     i "“Setelah kami,{w} maksudku aku dan Arthur keluar rumah sakit....”"
 
-    show iv_kesal:
-        xalign 0.8 yalign 0.1
+    show iv_kesal at naik
 
     i "“Kamu harus melakukan sesuatu untukku!”"
 
     l "“Iya... apa itu?”"
 
-    show iv_marah:
-        xalign 0.8 yalign 0.1
+    show iv_marah at naik
 
     i "“Menghilanglah dari kehidupanku!”"
 
@@ -695,9 +662,7 @@ label chapter_5:
 
     #show ivan_kesel sakit at my_near
 
-    show iv_serius:
-        xalign 0.8 yalign 0.1
-
+    show iv_serius at naik
     hide iv_marah
     i "“Aku serius, keputusanku sudah bulat.{w} Aku –”"
 
@@ -709,8 +674,7 @@ label chapter_5:
 
     #show ivan_marah sakit at my_near
 
-    show iv_marah:
-        xalign 0.8 yalign 0.1
+    show iv_marah at naik
 
     hide iv_serius
 
@@ -718,14 +682,10 @@ label chapter_5:
 
     l "“Kenapa kamu menanyakan hal it –”"
 
-    show iv_kesal:
-        xalign 0.8 yalign 0.1
+    show iv_kesal at naik
 
     i "“Kamu tidak bisa memilih, kan?”"
-    
-    show iv_marah:
-        xalign 0.8 yalign 0.1
-
+    show iv_marah at naik
     i "“Kamu terlalu baik Lisa!”"
 
     i "“Kamu bahkan masih ragu jka diberikan pilihan antara kekasihmu yang baik....”"
@@ -745,16 +705,12 @@ label chapter_5:
     l "“Tapi kan –”"
 
     hide iv_marah
-
-    show iv_normal:
-        xalign 0.8 yalign 0.1
+    show iv_normal at naik
    
     i "“Itu permintaanku.”"
 
     hide iv_normal
-
-    show iv_serius:
-        xalign 0.8 yalign 0.1
+    show iv_serius at naik
 
     i "“Setelah aku dan Arthur keluar dari rumah sakit.”"
 
@@ -766,9 +722,7 @@ label chapter_5:
 
     n "Jawabku menundukan kepala."
 
-    show iv_normal:
-        xalign 0.8 yalign 0.1
-
+    show iv_normal at naik
     hide iv_serius
 
     i "“Satu hal lagi.”"
@@ -777,8 +731,7 @@ label chapter_5:
 
     i "“Sampai kapanpun, jangan pernah mencariku,{w} bahkan menemuiku!”"
 
-    show iv_marah:
-        xalign 0.8 yalign 0.1
+    show iv_marah at naik
 
     hide iv_normal
     i "“Kamu harus menepati janji ini!”"
@@ -793,25 +746,14 @@ label chapter_5:
 
     n "Aku benar-benar kesal karena mendengar permintaan bodohnya itu."
 
-
-    #hide ivan_marah sakit at my_near
-
-    #show ivan_senyum sakit at my_near
-    show iv_senang:
-        xalign 0.8 yalign 0.1
-
+    show iv_senang at naik
     hide iv_marah
 
     i "“Baguslah...”"
 
-    #hide ivan_senyum sakit at my_near with dissolve
-
     n "Senyum tulus kembali dari Ivan."
 
-    show iv_merem:
-        xalign 0.8 yalign 0.1
-
-    with dissolve
+    show iv_merem at naik with dissolve
 
     hide iv_senang
 
@@ -850,7 +792,7 @@ label chapter_5:
     n "Bahkan Karin juga tidak terlihat dalam rombongan yang mengantar kepergian kami."
 
 
-    n "Sejak Mereka..... {w} Arthur dan Ivan, keluar dari rumah sakit."
+    n "Sejak mereka..... {w} Arthur dan Ivan, keluar dari rumah sakit."
 
     n "Aku dan Ivan benar-benar sudah tidak saling bicara."
 

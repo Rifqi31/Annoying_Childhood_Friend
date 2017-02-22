@@ -60,7 +60,6 @@ label chapter_3:
 
     #suara bell rumah TING TENG!!
     play sound "<from 2 to 5>sfx/doorbell.wav"
-
     
     n "Tiba-tiba suara bell dari pintu rumahku berdering cukup keras."
 
@@ -338,7 +337,7 @@ label chapter_3:
 
     n "Kulihat untuk sesaat,{w} hanya sesaat."
 
-    n "Ivan mengepalkan tangan kanannya,"
+    n "Ivan mengepalkan tangan kanannya."
 
     n "Dia sedang menahan amarahnya."
 
@@ -401,7 +400,7 @@ label chapter_3:
 
     n "Siapa tahu saja dia bisa membantuku untuk mencari pendonor untuk Arthur."
 
-    n "Emmm... tidak apa kah?."
+    n "Emmm... tidak apa kah?"
 
     n "Apa tidak apa-apa jika aku menceritakan rahasia Arhur padanya?"
 

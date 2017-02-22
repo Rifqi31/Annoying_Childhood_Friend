@@ -3,11 +3,9 @@
 
 label last_scene:
 
-
   #cuplikan
-    #pake efek cantik dooongggg
-    show langit2 with pixellate
-    
+ 
+    show langit2 with fade
     play music sesuatu fadeout 1.0 fadein 1.0
 
     n "Beberapa bulan, setelah Lisa dan yang lainnya mengunjungi makam Ivan."
@@ -68,6 +66,22 @@ label last_scene:
 
     with fade
     
-    #show creditt cuyyy
+    call thanks
 
     return
+
+
+
+label thanks:
+
+    scene black with fade
+
+    show hatur_nuhun:
+        xpos 450 ypos 300
+
+    with dissolve
+
+
+init:
+    image black = Solid((0,0,0))
+    image hatur_nuhun = Text("{size=40}{color=#FFFFFF}Thanks for playing", text_align=0.5) 

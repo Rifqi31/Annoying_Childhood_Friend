@@ -1,2 +1,2 @@
-# Annoying_Childhood_Friend
+# Annoying Childhood Friend
 Visual Novel

@@ -92,9 +92,7 @@ label chapter_2:
     n "Aku berpikir keras tentang perkataanya barusan."
 
 
-    hide arthur_normal at my_near
-
-    with dissolve
+    hide arthur_normal at my_near with dissolve
 
 
     n "Aku menolehkan kepalaku ke belakang, berniat menyembunyikan wajahku yang malu."
@@ -469,7 +467,7 @@ label chapter_2:
 
     ##cg langit sore with cinema
 
-    play music audio.open_mind fadeout 1.0 fadein 1.0
+    play music sesuatu fadeout 1.0 fadein 1.0
 
     scene bg koridor with fade
 

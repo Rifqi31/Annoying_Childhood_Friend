@@ -4,12 +4,10 @@
 label chapter_6:
 
     scene black with fade
-
     show game:
         xpos 450 ypos 300
 
     with dissolve
-
     $ renpy.pause(3.0, hard=True)
 
     scene bg jalanan with fade
@@ -120,9 +118,9 @@ label chapter_6:
 
     hide arthur_young senyum at my_near2 with dissolve
 
-    show karin_young senyum at my_near2 with dissolve
 
     show cinema with dissolve
+    show karin_young senyum at my_near2 with dissolve
 
     n "Ehhh... Karin?"
 
@@ -390,7 +388,7 @@ label chapter_6:
     n "Mungkin seperti itu perkataannya saat kami bertemu nanti."
 
 
-    scene bg pemakaman with fade
+    scene bg pemakaman with squares
 
 
     show karin_young sayu at my_near2 with dissolve
@@ -644,7 +642,7 @@ label chapter_6:
 
     n "Aku menangis lebih dalam."
 
-    n "Hatiku saat itu benar-benar sakit."
+    n "Hatiku saat ini benar-benar sakit."
 
 
     show karin_young kesal at my_near2 with dissolve
@@ -1090,7 +1088,9 @@ label chapter_6:
 
     n "Aku benar-benar menyesalinya."
 
-    n "Menyesali perbuatanku di masa lalu yang tidak pernah memperhatikannya, dan terus menganggap dia sebagai penggangu."
+    n "Menyesali perbuatanku di masa lalu yang tidak pernah memperhatikannya."
+
+    n "Dan terus menganggap dia sebagai penggangu."
 
 
     show karin_young nutup at my_near2 with dissolve
@@ -1111,7 +1111,7 @@ label chapter_6:
 
     hide arthur_young sedih_2 with dissolve
 
-    show karin_young kesal_2 at my_near2 with dissolve
+    show karin_young sayu at my_near2 with dissolve
 
     k "“Jaga Lisa.”"
 
@@ -1119,7 +1119,7 @@ label chapter_6:
 
     k "“Jangan pernah bersikap kasar padanya sepertiku......”"
 
-    hide karin_young kesal_2
+    hide karin_young sayu
 
     show karin_young nutup at my_near2
     k "“Itulah katanya”"
@@ -1179,7 +1179,7 @@ label chapter_6:
     hide karin_marah with dissolve
     hide cinema with dissolve
 
-    n "“Jadi ini maksudnya."
+    n "Jadi ini maksudnya."
 
     n "Jadi ini arti dari perkataanya."
 
@@ -1203,9 +1203,8 @@ label back_credits:
     $ credits_speed = 25 #scrolling speed in seconds
     
     scene black with fade
-    
     show cred at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
-    with Pause(credits_speed)
+    $ renpy.pause(credits_speed, hard=True)
     hide cred
 
     show theend:
@@ -1214,20 +1213,21 @@ label back_credits:
 
     with dissolve
     $ renpy.pause(3.0, hard=True)
-    
+
     hide theend
 
     show game:
         xpos 450 ypos 300
 
     with dissolve
-
     $ renpy.pause(3.0, hard=True)
+
+    hide game with dissolve
 
 
 init python:
-    credits = ('', 'MikuMikuDance Program\n'), ('', 'Dead Silver Virus\n'), ('', 'Mizuki2108\n'),('', '\n\n\n\n\n\nThanks to All Resources Support\n'),('', '\n\n\n\n\n\nAnd You\n')
-    credits_s = "{size=80}Special Thanks For\n\n\n"
+    credits = ('', 'MikuMikuDance Program\n'), ('', 'Dead Silver Virus\n'), ('', 'Mizuki2108\n'),('', 'Khresna Bayu Mahisa\n'),('', 'And to all of our resources support\n'),('', '\n\n\n\n\n\n\nAnd You\n')
+    credits_s = "{size=80}Special Thanks For\n\n\n\n"
     c1 = ''
     for c in credits:
         if not c1==c[0]:
@@ -1237,7 +1237,7 @@ init python:
 
    
 init:
-#    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
+
     image black = Solid((0,0,0))
     image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=80}fin", text_align=0.5)

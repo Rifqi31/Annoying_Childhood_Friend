@@ -18,7 +18,7 @@ define config.name = _("")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = False
+define gui.show_name = True
 
 
 ## The version of the game.
@@ -73,7 +73,6 @@ define config.main_menu_music = "music/mainmenu.mp3"
 
 define config.enter_transition = dissolve
 define config.exit_transition = dissolve
-
 
 ## A transition that is used after a game has been loaded.
 

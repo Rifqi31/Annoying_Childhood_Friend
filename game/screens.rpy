@@ -298,6 +298,7 @@ screen navigation():
 
             textbutton _("Start") action Start()
 
+
         else:
 
             textbutton _("History") action ShowMenu("history")
@@ -396,6 +397,7 @@ style main_menu_text:
     layout "subtitle"
     text_align 1.0
     color gui.accent_color
+    
 
 style main_menu_title:
     size gui.title_text_size

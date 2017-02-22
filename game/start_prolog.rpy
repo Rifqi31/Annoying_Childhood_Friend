@@ -2,20 +2,21 @@
 label start_prolog:
 
    #Prolog
+    scene white with Dissolve(1.0)
 
-    #stop music main_menu_music
+    $ renpy.pause(2.0, hard=True)
+
+    stop music fadeout 3.0
 
     play sound opendoor_morning
 
     play sound walking_morning
 
-    scene black
+    scene black with dissolve
     
     n "Aku perlahan membuka pintu rumahku."
 
     n "Lalu berjalan cukup pelan menuju sekolah."
-
-    ## show cg langit with fade
 
     show langit with dissolve
 
@@ -26,6 +27,7 @@ label start_prolog:
     n "Mengiringi kepergianku untuk terus melangkahkan kakiku ke sekolah."
 
     hide langit with dissolve
+    play sound birds
 
     ## masukan CG disini
     show lisa_cg with dissolve:
@@ -46,8 +48,6 @@ label start_prolog:
 
     n "Tapi sayangnya aku menolak mereka."
 
-
-    ## ganti dengan cg Lisa senyum
     
     hide lisa_cg
 
@@ -76,8 +76,6 @@ label start_prolog:
     n "Untuk sesaat aku hanya berdiam diri."
 
     l "“Aku masih memiliki banyak waktu untuk pergi ke sekolah.”"
-
-    ## Masuk ke layar gelap dengan fade atas bawah. 
 
     scene black with fade 
     
@@ -216,7 +214,6 @@ label start_prolog:
     #Lisa
     l "“Mungkin saja, jika –“"
 
-    #Arthur dengan label tanda tanya di awal
 
     anonim "“Lisa! Ivan...!”"
 
@@ -331,7 +328,7 @@ label start_prolog:
 
     n "Aku hanya melirik sinis Ivan."
 
-    n "Wajahnya saat itu benar-benar membuatku kesal." 
+    n "Wajahnya saat ini benar-benar membuatku kesal." 
     
     n "Dia terlihat bahagia saat aku terbakar cemburu seperti ini."
 
@@ -352,8 +349,6 @@ label start_prolog:
     show cinema with dissolve
 
     show karin_normal at my_near with dissolve
-
-    k "“Yo. Ivan”"
 
     n "Karin Viona."
 
@@ -457,11 +452,8 @@ label start_prolog:
 
     hide karin_marah at my_near with dissolve
 
-    #hide ivan_kesel at my_right
-
     with dissolve
 
-# # show bg tanpa karakter
 
     play sound walking_morning
 
@@ -485,9 +477,6 @@ label start_prolog:
     with dissolve
 
 
-
-
-# # show Ivan muka kesel dan Karin muka dingin
 
     n "Terlihat tatapan yang tajam dari mereka berdua ke arahku."
 
@@ -533,8 +522,6 @@ label start_prolog:
     n "Aku harus mengatakan..."
 
     n "Kalau aku menyukai Arthur."
-
-    #end of prolog
-    #jumpnya pake efek yang cantik kek gitu. misalnya kotak2 
+ 
 
     jump chapter_1

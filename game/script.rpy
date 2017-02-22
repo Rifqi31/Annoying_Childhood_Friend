@@ -213,6 +213,9 @@ image bg jalanan_baru2 = "backgrounds/jalan_masa_depan.jpg"
 
 image bg batu nisan = "backgrounds/batu-nisan.jpg"
 
+image bg batu nisan = "backgrounds/batu-nisan.jpg"
+
+image bg langit = "events/langit.jpg"
 
 
 #event
@@ -316,7 +319,9 @@ transform my_right:
     xalign .6 yalign 1.0
 
 
-
+#posisi iv-sakit
+transform naik:
+    xalign 0.8 yalign 0.1
 
 #posisi sembuyi
 transform sembunyi_1:
@@ -498,6 +503,15 @@ init python:
     Shake = renpy.curry(_Shake)
 
 
+    #configuration variables
+
+    #window title
+    config.window_title = "Annoying Childhood Friend"
+
+    #transition after splachscreen
+    config.end_splash_transition = Dissolve(2.0)
+
+    #config.window_icon
 
 
 ## The game starts here.
@@ -522,23 +536,6 @@ label start:
 
 label splashscreen:
     scene white with fade
-
-    show present:
-        xpos 500  ypos 300
-
-    $ renpy.pause(3.0, hard=True)
-
-    hide present
-    
-
-    show created:
-        xpos 500  ypos 300
-
-    with dissolve
-
-    $ renpy.pause(3.0, hard=True)
-
-    hide created
 
 
     show deddy:
@@ -578,21 +575,33 @@ label splashscreen:
 
     with dissolve
 
-    return
+#    return
+
+
+
+
 
 
 init:
+    #credits
     image white = Solid((255, 255, 255, 255))
     image black = Solid((0,0,0))
 
-    image present = Text("{size=40}{color=#000000}Presented By", text_align=0.5)
     
     image deddy = Text("{size=25},{color=#000000}Deddy Z                Art+Director", text_align=0.5)
     image nando = Text("{size=25},{color=#000000}Rifqi                      Proramming", text_align=0.5)
     image rifqi = Text("{size=25},{color=#000000}Fernando               Art", text_align=0.5)
     image writer = Text("{size=25},{color=#000000}R Lullaby               Writer", text_align=0.5)
 
-    image created = Text("{size=40}{color=#000000}Created with", text_align=0.5)
 
     image engine = "logo/renpy.png"
     image mikudance = "logo/miku_miku_dance.png"
+
+
+
+#label main_menu:
+
+#    scene cover
+#    $ renpy.show_cover
+#    with None
+#    $ renpy.transition(dissolve)

@@ -198,9 +198,9 @@ label chapter_1:
     #Lisa
     l "“Ini bukan salah Lisa Pak!"
 
-    l "Ivan yang tiba-tiba mendorongku hingga aku terjatuh!!”"
+    l "“Ivan yang tiba-tiba mendorongku hingga aku terjatuh!!”"
 
-    n "Teriak kesalku saat itu."
+    n "Teriak kesalku saat ini."
 
     show ivan_kesel at my_near with dissolve
 
@@ -345,6 +345,8 @@ label chapter_1:
 
     with fade
     
+    show cinema with dissolve
+    
     show ivan_sebel at my_near with dissolve
 
     i "“Jangan ge’er.”"
@@ -406,6 +408,6 @@ label chapter_1:
 
     n "Aku sudah siap menerima kabar terburuk dari mulutnya."
 
-    #end of chapter 1
+    #end of chapter 2
 
     jump chapter_2
