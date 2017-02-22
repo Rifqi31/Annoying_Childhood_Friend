@@ -5,6 +5,11 @@ label chapter_6:
 
     scene black with fade
 
+    show game:
+        xpos 450 ypos 300
+
+    with dissolve
+
     $ renpy.pause(3.0, hard=True)
 
     scene bg jalanan with fade
@@ -1199,55 +1204,41 @@ label back_credits:
     
     scene black with fade
     
+    show cred at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    with Pause(credits_speed)
+    hide cred
+
     show theend:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
 
     with dissolve
-    $ renpy.pause(1.0, hard=True)
+    $ renpy.pause(3.0, hard=True)
+    
     hide theend
-    
-    show cred at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
-    with Pause(credits_speed)
-    hide cred
-    
-    show cast at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
-    with Pause(credits_speed)
-    hide cast
 
-    show thanks:
-        yanchor 0.5 ypos 0.5
-        xanchor 0.5 xpos 0.5
+    show game:
+        xpos 450 ypos 300
 
     with dissolve
-    $ renpy.pause(1.0, hard=True)
-    hide thanks
+
+    $ renpy.pause(3.0, hard=True)
 
 
 init python:
-    credits = ('', 'MikuMikuDance\n'), ('', 'Dead Silver Virus\n'), ('', 'Mizuki2108\n')
-    credits_s = "{size=80}Credits\n\n"
+    credits = ('', 'MikuMikuDance Program\n'), ('', 'Dead Silver Virus\n'), ('', 'Mizuki2108\n'),('', '\n\n\n\n\n\nThanks to All Resources Support\n'),('', '\n\n\n\n\n\nAnd You\n')
+    credits_s = "{size=80}Special Thanks For\n\n\n"
     c1 = ''
     for c in credits:
         if not c1==c[0]:
             credits_s += "\n{size=40}" + c[0] + "\n"
-        credits_s += "{size=60}" + c[1] + "\n"
+        credits_s += "{size=45}" + c[1] + "\n"
         c1=c[0]
 
-
-    casting = ('', 'Lisa\n'), ('', 'Arthur\n'), ('', 'Ivan\n'), ('', 'Karin\n')
-    casting_s = "{size=80}Cast\n\n"
-    c1 = ''
-    for c in casting:
-        if not c1==c[0]:
-            casting_s += "\n{size=40}" + c[0] + "\n"
-        casting_s += "{size=60}" + c[1] + "\n"
-        c1=c[0]
    
 init:
 #    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
     image black = Solid((0,0,0))
     image cred = Text(credits_s, text_align=0.5)
-    image cast = Text(casting_s, text_align=0.5)
-    image theend = Text("{size=80}The end", text_align=0.5)
-    image thanks = Text("{size=80}Thanks\n to all resource support", text_align=0.5)
+    image theend = Text("{size=80}fin", text_align=0.5)
+    image game = Text("{size=40}{color=#FFFFFF}Annoying\nChildhood Friend", text_align=0.5)

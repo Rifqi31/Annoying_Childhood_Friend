@@ -59,7 +59,7 @@ label chapter_3:
 
 
     #suara bell rumah TING TENG!!
-    play sound bel_apartemen
+    play sound "<from 2 to 5>sfx/doorbell.wav"
 
     
     n "Tiba-tiba suara bell dari pintu rumahku berdering cukup keras."
@@ -616,7 +616,7 @@ label chapter_3:
 
     show cinema with dissolve
     ## suara nada sekali bunyi
-    play sound "<from 1 to 7.5>sfx/nelp.wav"
+    play sound "<from 1 to 2>sfx/nelp.wav"
 
     n "Aku bertanya langsung ke intinya."
 

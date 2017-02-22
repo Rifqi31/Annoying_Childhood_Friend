@@ -246,7 +246,7 @@ image bg apartemen = "backgrounds/apartemen.jpg"
 
 image bg apartemen2 = "backgrounds/apartemen2.jpg"
 
-image bg kamar_mandi = im.Scale("backgrounds/kamar_mandi.bmp", 1366, 768)
+image bg kamar_mandi = im.Scale("backgrounds/kamar_mandi.jpg", 1366, 768)
 
 image bg lorong_rm = "backgrounds/lorong_rumah_sakit.jpg"
 
@@ -256,7 +256,7 @@ image bg rumah_ivan = im.Scale("backgrounds/Rumah_ivan.jpg", 1366, 768)
 
 image rumah_ivan_dalam = "backgrounds/rumiv-dalem.jpg"
 
-image bg jalanan_baru2 = "backgrounds/jalan_masa_depan.bmp"
+image bg jalanan_baru2 = "backgrounds/jalan_masa_depan.jpg"
 
 image bg batu nisan = "backgrounds/batu-nisan.jpg"
 
@@ -270,9 +270,9 @@ image dinding_ivan = "backgrounds/dinding-ivan.jpg"
 
 image sky_cg = "events/langit.jpg"
 
-image snack1 = Image("events/snack1.jpg", xalign = 0.5, yalign= 0.3)
+image snack1 = Image("events/snack1.jpg", xalign = 0.5, yalign= 0.5)
 
-image snack2 = Image("events/snack2.jpg", xalign = 0.5, yalign= 0.3)
+image snack2 = Image("events/snack2.jpg", xalign = 0.5, yalign= 0.5)
 
 image kantong_plastik = Image("events/plastik.jpg", xalign = 0.5, yalign= 0.5)
 
@@ -374,7 +374,7 @@ transform posisi_kanan:
 
 
 # declare the character
-define n = Character(ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+define n = Character(ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                    ctc_position="fixed",
                    what_outlines = [(3, "#5186ff", 0, 0)])
 
@@ -383,7 +383,7 @@ define n = Character(ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanc
 
 define l = Character('Lisa',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -392,7 +392,7 @@ define l = Character('Lisa',
 
 define a = Character('Arthur',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -401,7 +401,7 @@ define a = Character('Arthur',
 
 define i = Character('Ivan',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -409,7 +409,7 @@ define i = Character('Ivan',
 
 define k = Character('Karin',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -420,7 +420,7 @@ define k = Character('Karin',
 #karakter pembantu
 define c = Character('Cewek A',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -428,7 +428,7 @@ define c = Character('Cewek A',
 
 define g = Character('Pak Andi',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -436,7 +436,7 @@ define g = Character('Pak Andi',
 
 define s = Character('Suster',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -444,7 +444,7 @@ define s = Character('Suster',
 
 define child = Character('Gadis Mungil',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -452,7 +452,7 @@ define child = Character('Gadis Mungil',
 
 define man = Character('Another Man',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -461,7 +461,7 @@ define man = Character('Another Man',
 #conditional
 define anonim = Character('???',
                     color="#ffffff",
-                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=590, xanchor=0, yanchor=0),
+                    ctc=anim.Blink("next-button.png", xpos=1010, ypos=620, xanchor=0, yanchor=0),
                     ctc_position="fixed",
                     who_outlines =[(3, "#5186ff", 0, 0)],
                     what_outlines = [(3, "#5186ff", 0, 0)])
@@ -551,6 +551,17 @@ label front_credits:
 
     hide present
     
+
+    show created:
+        xpos 500  ypos 300
+
+    with dissolve
+
+    $ renpy.pause(3.0, hard=True)
+
+    hide created
+
+
     show deddy:
         xpos 400 ypos 200
 
@@ -572,14 +583,6 @@ label front_credits:
     hide rifqi
     hide writer
 
-    show created:
-        xpos 500  ypos 300
-
-    with dissolve
-
-    $ renpy.pause(3.0, hard=True)
-
-    hide created
 
     show engine:
         xpos 250 ypos 200
@@ -593,16 +596,6 @@ label front_credits:
 
     hide engine
     hide mikudance
-
-    show black with fade
-
-    show game:
-        xpos 450 ypos 300
-
-    with dissolve
-
-    $ renpy.pause(3.0, hard=True)
-
 
 
 init:
@@ -620,5 +613,3 @@ init:
 
     image engine = "logo/renpy.png"
     image mikudance = "logo/miku_miku_dance.png"
-    
-    image game = Text("{size=40}{color=#FFFFFF}Annoying\nChildhood Friend", text_align=0.5)
