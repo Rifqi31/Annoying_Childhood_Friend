@@ -66,16 +66,6 @@ image ivkas_senyum = im.Scale("characters/Ivan/kasual/IvanS_senyum.png", 346, 80
 image ivkas_ledek = im.Scale("characters/Ivan/kasual/IvanS_ledek.png", 346, 800)
 
 
-#hospital
-image ivan_kaget sakit = im.Scale("characters/Ivan/Ivan_sakit/IvanSa_Kaget.png", 550, 750)
-image ivan_kesel sakit = im.Scale("characters/Ivan/Ivan_sakit/IvanSa_Kesel.png", 550, 750)
-image ivan_marah sakit = im.Scale("characters/Ivan/Ivan_sakit/IvanSa_Marah.png", 550, 750)
-image ivan_sebel sakit = im.Scale("characters/Ivan/Ivan_sakit/IvanSa_Sebel.png", 550, 750)
-image ivan_senyum sakit = im.Scale("characters/Ivan/Ivan_sakit/IvanSa_Senyum.png", 550, 750)
-image ivan_tablo sakit = im.Scale("characters/Ivan/Ivan_sakit/IvanSa_Tablo.png", 550, 750)
-
-
-
 #####################################
 #Karin#
 #####################################
@@ -133,33 +123,6 @@ image ivkas_sayu normal = im.Scale("characters/Ivan/kasual/IvanS_sayu.png", 285,
 image ivkas_senyum normal = im.Scale("characters/Ivan/kasual/IvanS_senyum.png", 285, 650)
 
 
-## script tambahan deddy
-
-image lisa_cg2 = "events/cg2.jpg"
-
-image langit = "events/langit.jpg"
-
-image langit2 = "events/langit2.jpg"
-
-image cinema = "events/cinema.png"
-
-image iv_merem = "events/iv-sakit/merem.jpg"
-
-image iv_bangun = "events/iv-sakit/bangun.jpg"
-
-image iv_kesal = "events/iv-sakit/kesal.jpg"
-
-image iv_marah = "events/iv-sakit/marah.jpg"
-
-image iv_normal = "events/iv-sakit/normal.jpg"
-
-image iv_picik = "events/iv-sakit/picik.jpg"
-
-image iv_senang = "events/iv-sakit/senang.jpg"
-
-image iv_serius = "events/iv-sakit/serius.jpg"
-
-
 #Karin Young
 image karin_young normal normal = im.Scale("characters/Karin/young/karin2-normal.png", 350, 650)
 image karin_young senyum normal = im.Scale("characters/Karin/young/karin2-senyum.png", 400, 650)
@@ -176,7 +139,6 @@ image karin_young sayu normal = im.Scale("characters/Karin/young/karin2-sayu.png
 
 #karin
 image karin_marah normal= im.Scale("characters/Karin/teen/karin-marah.png", 285, 650)
-
 
 
 
@@ -208,15 +170,6 @@ image ivan_kesel cinematic far = Image("characters/Ivan/teen/Ivan-kesel_far.png"
 image ivan_kaget hiding = Image("characters/Ivan/teen/ivan-kaget_sembunyi.png",xpos = 450 , ypos = 230)
 image ivan_senyum hiding = Image("characters/Ivan/teen/ivan-senyum_sembunyi.png",xpos = 450 , ypos = 230)
 
-#arthur
-image arthur_normal cinematic far = Image("characters/Arthur/teen/Arthur-normal_far.png",xalign = 0.3, yalign= 0.4)
-image arthur_normal cinematic = im.Crop("characters/Arthur/teen/Arthur-normal_cin.png",0,0,346,630)
-
-
-#karin
-image karin_normal cinematic far = Image("characters/Karin/teen/karin-normal_far.png",xalign = 0.6, yalign= 0.4)
-image karin_marah cinematic far = Image("characters/Karin/teen/karin-marah_far.png", xalign = 0.6, yalign= 0.4)
-image karin_marah cinematic = im.Crop("characters/Karin/teen/karin-marah_cin.png",0,0,346,630)
 
 #hiding position
 image karin_sedih hiding = Image("characters/Karin/teen/karin-sedih_sembunyi.png",xpos = 510 , ypos = 230)
@@ -261,6 +214,7 @@ image bg jalanan_baru2 = "backgrounds/jalan_masa_depan.jpg"
 image bg batu nisan = "backgrounds/batu-nisan.jpg"
 
 
+
 #event
 image lisa_cg = "events/cg.jpg"
 
@@ -280,14 +234,33 @@ image minuman = Image("events/minuman.jpg", xalign = 0.5, yalign= 0.5)
 
 image surat = Image("events/surat.jpg", xalign = 0.5, yalign= 0.5)
 
+image lisa_cg2 = "events/cg2.jpg"
 
-#naration backgrounds
-image bg jalanan_cin = "backgrounds/cinematic/jalanan_cinematic.png"
+image langit = "events/langit.jpg"
+
+image langit2 = "events/langit2.jpg"
+
+image cinema = "events/cinema.png"
+
+image iv_merem = "events/iv-sakit/merem.jpg"
+
+image iv_bangun = "events/iv-sakit/bangun.jpg"
+
+image iv_kesal = "events/iv-sakit/kesal.jpg"
+
+image iv_marah = "events/iv-sakit/marah.jpg"
+
+image iv_normal = "events/iv-sakit/normal.jpg"
+
+image iv_picik = "events/iv-sakit/picik.jpg"
+
+image iv_senang = "events/iv-sakit/senang.jpg"
+
+image iv_serius = "events/iv-sakit/serius.jpg"
 
 
 
-
-#initialize music
+#initialize audio
 
 #sound effect
 define audio.opendoor_morning = "sfx/door.wav"
