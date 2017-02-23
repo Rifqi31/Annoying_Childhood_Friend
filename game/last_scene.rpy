@@ -84,4 +84,4 @@ label thanks:
 
 init:
     image black = Solid((0,0,0))
-    image hatur_nuhun = Text("{size=40}{color=#FFFFFF}Thanks for playing", text_align=0.5) 
+    image hatur_nuhun = Text("{size=40}{color=#FFFFFF}Thanks for playing",text_align=0.5) 

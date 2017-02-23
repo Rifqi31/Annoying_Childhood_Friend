@@ -575,9 +575,6 @@ label splashscreen:
 
     with dissolve
 
-#    return
-
-
 
 
 
@@ -596,12 +593,3 @@ init:
 
     image engine = "logo/renpy.png"
     image mikudance = "logo/miku_miku_dance.png"
-
-
-
-#label main_menu:
-
-#    scene cover
-#    $ renpy.show_cover
-#    with None
-#    $ renpy.transition(dissolve)

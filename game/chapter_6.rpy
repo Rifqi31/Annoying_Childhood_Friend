@@ -1240,5 +1240,5 @@ init:
 
     image black = Solid((0,0,0))
     image cred = Text(credits_s, text_align=0.5)
-    image theend = Text("{size=80}fin", text_align=0.5)
+    image theend = Text("{size=80}fin", font="font/MTCORSVA.TTF", text_align=0.5)
     image game = Text("{size=40}{color=#FFFFFF}Annoying\nChildhood Friend", text_align=0.5)
