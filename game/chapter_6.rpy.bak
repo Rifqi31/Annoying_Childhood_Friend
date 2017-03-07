@@ -1194,7 +1194,7 @@ label chapter_6:
     n "Lelaki yang selalu melindungiku."
 
 
-    call back_credits from _call_back_credits
+    call back_credits
 
     jump last_scene
 

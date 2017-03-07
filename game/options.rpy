@@ -38,6 +38,8 @@ define gui.about = _("")
 
 define build.name = "Annoying_Childhood_Friend"
 
+define build.executable_name = "Annoying Childhood Friend"
+
 
 ## Sounds and music ############################################################
 
@@ -135,14 +137,14 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "Annoying_Childhood_Friend-1483536704"
+define config.save_directory = "Annoying_Childhood_Friend"
 
 
 ## Icon ########################################################################
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/icon.png"
 
 
 
@@ -179,17 +181,37 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**.html', None)
+    build.classify('**.txt', None)
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    # Declare two archives.
+    build.archive("scripts", "all")
+    build.archive("sounds", "all")
+    build.archive("fonts", "all")
+    build.archive("images", "all")
+
+    # Put script files into the scripts archive.
+    build.classify("game/**.rpy", "scripts")
+    build.classify("game/**.rpyc", "scripts")
+
+    # Put sounds into the sounds archive.
+    build.classify("game/**.wav", "sounds")
+    build.classify("game/**.mp3", "sounds")
+
+    # Put fonts into the fonts archive.
+    build.classify("game/**.ttf", "fonts")
+    build.classify("game/**.TTF", "fonts")
+
+    build.classify('game/**.png', 'images')
+    build.classify('game/**.jpg', 'images')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
 
-    build.documentation('*.html')
-    build.documentation('*.txt')
+    #build.documentation('*.html')
+    #build.documentation('*.txt')
 
 ## A Google Play license key is required to download expansion files and perform
 ## in-app purchases. It can be found on the "Services & APIs" page of the Google

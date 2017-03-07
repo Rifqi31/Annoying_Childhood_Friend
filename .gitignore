@@ -11,5 +11,5 @@ log.txt
 
 
 # ignore directory #
-saves/
-cache/
+/saves
+/cache
